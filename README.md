@@ -8,6 +8,7 @@ cv2.destroyAllWindows()<br>
 
 Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/173810505-979b82e1-7cc9-4eb1-a8ff-50228060d653.png)<br>
+*******************************************************************************************************************************************************************<br>
 
 2.Develop a program to display the image using mat plot lib<br>
 import matplotlib.image as mping<br>
