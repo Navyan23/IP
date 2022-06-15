@@ -42,6 +42,12 @@ print(img2)<br>
 Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/173814321-0f9c723c-4bb6-4796-838a-55a29b425b5f.png)<br>
 
+5.Write a program to create image using a color<br>
+from PIL import Image<br>
+img=Image.new('RGB',(200,400),(255,255,0))<br>
+img.show()<br>
+
+Output:
 
 
 
