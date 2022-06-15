@@ -19,4 +19,14 @@ Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/173811930-e9e160ea-d325-4c99-a3dd-c41bdec26649.png)<br>
 
 
+3.Develop a program to perform a linear transformation<br>
+1)Rotation<br>
+import cv2<br>
+from PIL import Image<br>
+img=Image.open('img.jpg')<br>
+img=img.rotate(180)<br>
+img.show()<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+
 
