@@ -50,6 +50,29 @@ img.show()<br>
 Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/173815086-5e10e1e1-ee52-4821-8b0a-11fec815e210.png)<br>
 
+6.Develop a program to visualize the image using various color spaces<br>
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+import numpy as np<br>
+img=cv2.imread('img.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_RGB2BGR)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/173815946-eeebaef7-d9c0-4996-9e92-a2a64dc4dff7.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/173816178-a933cf9a-cc69-4271-9ab1-ed68cab30ce8.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/173816334-0feca8d5-21b1-40cd-96ab-8df53f69b402.png)<br>
+
+
+
+
+
 
 
 
