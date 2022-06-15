@@ -30,7 +30,19 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 Output:<br>
-![image](https://user-images.githubusercontent.com/97940058/173813674-1c4754cd-ea9c-4fa2-9ffe-ca23af66b9a1.png)
+![image](https://user-images.githubusercontent.com/97940058/173813674-1c4754cd-ea9c-4fa2-9ffe-ca23af66b9a1.png)<br>
+
+4.Develop a program to conver color tree to Rgb Color values<br>
+from PIL import ImageColor<br>
+img1=ImageColor.getrgb("yellow")<br>
+print(img1)<br>
+img2=ImageColor.getrgb("red")<br>
+print(img2)<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/173814321-0f9c723c-4bb6-4796-838a-55a29b425b5f.png)<br>
+
+
 
 
 
