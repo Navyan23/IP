@@ -69,6 +69,19 @@ Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816178-a933cf9a-cc69-4271-9ab1-ed68cab30ce8.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816334-0feca8d5-21b1-40cd-96ab-8df53f69b402.png)<br>
 
+7.Write a program to display the image attributes<br>
+image=Image.open('img.jpg')<br>
+print("Filename:",image.filename)<br>
+print("Format:",image.format)<br>
+print("Mode:",image.mode)<br>
+print("size:",image.size)<br>
+print("width:",image.width)<br>
+print("Height:",image.height)<br>
+image.close()<br>
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/173817125-c09ae608-7dfb-44de-b7c8-0871bed4dfb4.png)<br>
+
+
 
 
 
