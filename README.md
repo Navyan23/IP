@@ -120,6 +120,42 @@ Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/174055030-d31691c0-2d5a-47f4-ad35-0a61a9f54641.png)<br>
 
 
+Develop a program to read an image using URL<br>
+from skimage import io
+import matplotlib.pyplot as plt<br>
+url='https://images.unsplash.com/photo-1600703136783-bdb5ea365239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/175257948-78fe3194-63c7-46d2-8abe-56021d6bdd55.png)<br>
+
+
+Develop a program to mask and blur the image<br>
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
+img=mpimg.imread('fish3.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940058/175258451-47042a07-df8d-423f-9c64-53364085e01d.png)<br>
+hsv_img = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+light_orange=(1,190,200)<br>
+dark_orange=(18,255,255)<br>
+mask = cv2.inRange(hsv_img,light_orange,dark_orange)<br>
+result=cv2.bitwise_and(img,img,mask=mask)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(mask,cmap="gray")<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(result)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940058/175258867-b502187c-a1d5-42a0-add0-80deee0abc36.png)<br>
+
+
+
+
+
 
 
 
