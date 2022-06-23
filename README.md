@@ -172,6 +172,49 @@ plt.imshow(final_result)<br>
 plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/175260406-b25e69de-7d0c-47d7-8be2-35cada0f27f5.png)<br>
 
+blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
+plt.imshow(blur)<br>
+plt.show()<br>
+
+![image](https://user-images.githubusercontent.com/97940058/175264941-cadefad9-5027-4c46-974d-974f57b6544b.png)<br>
+
+
+Develop a program to perform arithmatic operations on image<br>
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
+img1=cv2.imread('bt1.jpg')<br>
+img2=cv2.imread('bt2.jpg')<br>
+fimg1=img1+img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2=img1-img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg2)<br>
+fimg3=img1*img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4=img1/img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg4)<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/175265590-6e672eee-add1-4dc5-ac31-16517d99af9a.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175265795-70cde284-b2fa-4945-a8be-3b23e2e32a6a.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175265974-c7462f8e-ebd8-44d7-8ca6-f811014e7087.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175266209-6a6b6284-8e26-41ca-9cef-8e9cac66d696.png)
+
+
+
+
+
+
+
+
 
 
 
