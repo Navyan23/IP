@@ -221,7 +221,7 @@ yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
 cv2.imshow("GRAY image",gray)<br>
 cv2.imshow("HSV image",hsv)<br>
 cv2.imshow("LAB image",lab)<br>
-cv2.imshow("HSL image",hls)<br>
+cv2.imshow("HLS image",hls)<br>
 cv2.imshow("YUV image",yuv)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
