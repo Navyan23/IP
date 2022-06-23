@@ -210,6 +210,38 @@ Output:<br>
 
 
 
+Develop a program to change the image to different color spaces<br>
+import cv2 <br>
+img=cv2.imread("D:\\flower1.jpg")<br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
+cv2.imshow("GRAY image",gray)<br>
+cv2.imshow("HSV image",hsv)<br>
+cv2.imshow("LAB image",lab)<br>
+cv2.imshow("HSL image",hls)<br>
+cv2.imshow("YUV image",yuv)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/175268656-a95b8986-4d80-4e17-a954-586270cc0ef0.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175268891-acb27b76-a9b8-4959-a877-7a0d7d2544d2.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175269107-99d9cd1d-7d4f-40d4-b632-164c273673e3.png)<br>
+  ![image](https://user-images.githubusercontent.com/97940058/175269323-ef7282cd-2b28-4d3e-8413-658d17a0a3fe.png)<br>
+  ![image](https://user-images.githubusercontent.com/97940058/175269542-10409f54-064b-496f-913d-115fad8d9113.png)
+
+  
+
+
+
+
+
+
+
+
 
 
 
