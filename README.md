@@ -249,6 +249,91 @@ c.waitKey(0)<br>
 Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/175272710-ca0aa707-9341-46d7-8149-d7e5da5e7317.png)
 
+program to perform bitwise operations<br>
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+image1=cv2.imread('bt1.jpg')<br>
+image2=cv2.imread('bt1.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
+
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/176425094-2994cde7-8ec4-4290-94a6-1143328759ae.png)<br>
+
+
+program to blurring image<br>
+import cv2<br>
+import numpy as np<br>
+image=cv2.imread('dog.jpg')<br>
+cv2.imshow('Original Image',image)<br>
+cv2.waitKey(0)<br>
+Gaussian =cv2.GaussianBlur(image,(7,7),0)<br>
+cv2.imshow('Gaussian Blurring',Gaussian)<br>
+cv2.waitKey(0)<br>
+median=cv2.medianBlur(image,5)<br>
+cv2.imshow('Median Blirring',median)<br>
+cv2.waitKey(0)<br>
+bilateral=cv2.bilateralFilter(image,9,75,75)<br>
+cv2.imshow('Bilateral Blurring',bilateral)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/176425809-04bfe8ad-5c35-495a-a801-56104ba305ec.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/176426027-a6383d2c-1a47-4a8b-bc5d-b0511f740464.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/176426238-efa3d1ad-fb27-4c81-883d-b5e7c7a7737b.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/176426400-8803e296-5610-4004-8124-2e157ff9fac4.png)<br>
+
+
+program to perform image enhancement<br>
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('dog.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5<br>
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_col.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(image)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
