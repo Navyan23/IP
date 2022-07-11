@@ -70,7 +70,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816178-a933cf9a-cc69-4271-9ab1-ed68cab30ce8.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816334-0feca8d5-21b1-40cd-96ab-8df53f69b402.png)<br>
 
-7.Write a program to display the image attributes<br>
+**7.Write a program to display the image attributes**<br>
 image=Image.open('img.jpg')<br>
 print("Filename:",image.filename)<br>
 print("Format:",image.format)<br>
@@ -79,10 +79,10 @@ print("size:",image.size)<br>
 print("width:",image.width)<br>
 print("Height:",image.height)<br>
 image.close()<br>
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/173817125-c09ae608-7dfb-44de-b7c8-0871bed4dfb4.png)<br>
 
-8.Develop a program to conver the original image to gray scale and then to binary<br>
+**8.Develop a program to conver the original image to gray scale and then to binary**<br>
 import cv2<br>
 #read the image file<br>
 img=cv2.imread('flower4.jpg')<br>
@@ -98,7 +98,7 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/174053716-8938d4f5-eae9-42ee-b9ba-fed2ff2e0c48.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054021-d5c718d0-f813-4472-9e71-9f06defce688.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054281-cc6fb558-c42b-4424-b5e5-d54cbdcdd461.png)<br>
