@@ -293,10 +293,15 @@ cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 Output:<br>
-![image](https://user-images.githubusercontent.com/97940058/176425809-04bfe8ad-5c35-495a-a801-56104ba305ec.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/176426027-a6383d2c-1a47-4a8b-bc5d-b0511f740464.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/176426238-efa3d1ad-fb27-4c81-883d-b5e7c7a7737b.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/176426400-8803e296-5610-4004-8124-2e157ff9fac4.png)<br>
+
+Output:
+![image](https://user-images.githubusercontent.com/97940058/178445519-a854bb7e-8412-40a3-88bd-63aba67ef750.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178445728-0374acda-2bf4-444c-b1c3-2ba3c58da177.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178445887-e0de7f18-4abe-42e0-8acb-bf1254167f7e.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178446106-7ed25d5d-d485-42f6-9526-0f593b4a4d45.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
+
+
 
 
 program to perform image enhancement<br>
@@ -321,12 +326,10 @@ sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
 
-Output:
-![image](https://user-images.githubusercontent.com/97940058/178445519-a854bb7e-8412-40a3-88bd-63aba67ef750.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178445728-0374acda-2bf4-444c-b1c3-2ba3c58da177.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178445887-e0de7f18-4abe-42e0-8acb-bf1254167f7e.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178446106-7ed25d5d-d485-42f6-9526-0f593b4a4d45.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
+
+
 
 
 
