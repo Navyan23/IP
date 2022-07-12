@@ -33,6 +33,7 @@ cv2.destroyAllWindows()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/173813674-1c4754cd-ea9c-4fa2-9ffe-ca23af66b9a1.png)<br>
 
+
 **4.Develop a program to conver color tree to Rgb Color values**<br>
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("yellow")<br>
@@ -70,6 +71,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816178-a933cf9a-cc69-4271-9ab1-ed68cab30ce8.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816334-0feca8d5-21b1-40cd-96ab-8df53f69b402.png)<br>
 
+
 **7.Write a program to display the image attributes**<br>
 image=Image.open('img.jpg')<br>
 print("Filename:",image.filename)<br>
@@ -81,6 +83,7 @@ print("Height:",image.height)<br>
 image.close()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/173817125-c09ae608-7dfb-44de-b7c8-0871bed4dfb4.png)<br>
+
 
 **8.Develop a program to conver the original image to gray scale and then to binary**<br>
 import cv2<br>
@@ -103,7 +106,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054021-d5c718d0-f813-4472-9e71-9f06defce688.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054281-cc6fb558-c42b-4424-b5e5-d54cbdcdd461.png)<br>
 
-9.Resize the original image<br>
+**9.Resize the original image**<br>
 import cv2<br>
 img=cv2.imread('dog.jpg')<br>
 print('original image length width',img.shape)<br>
@@ -114,13 +117,13 @@ cv2.imshow('resized image',imgresize)<br>
 print('Resized image length width',imgresize.shape)<br>
 cv2.waitKey(0)<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/174055275-1d74a30b-86e0-433b-8423-b82576d97cce.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054877-d34d8d27-70f1-48d4-a8bb-015732738a12.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174055030-d31691c0-2d5a-47f4-ad35-0a61a9f54641.png)<br>
 
 
-Develop a program to read an image using URL<br>
+**Develop a program to read an image using URL**<br>
 from skimage import io
 import matplotlib.pyplot as plt<br>
 url='https://images.unsplash.com/photo-1600703136783-bdb5ea365239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
@@ -128,11 +131,11 @@ image=io.imread(url)<br>
 plt.imshow(image)<br>
 plt.show()<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/175257948-78fe3194-63c7-46d2-8abe-56021d6bdd55.png)<br>
 
 
-Develop a program to mask and blur the image<br>
+**Develop a program to mask and blur the image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -179,7 +182,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/175264941-cadefad9-5027-4c46-974d-974f57b6544b.png)<br>
 
 
-Develop a program to perform arithmatic operations on image<br>
+**Develop a program to perform arithmatic operations on image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -202,7 +205,7 @@ plt.imshow(fimg4)<br>
 plt.show()<br>
 cv2.imwrite('output.jpg',fimg4)<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/175265590-6e672eee-add1-4dc5-ac31-16517d99af9a.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/175265795-70cde284-b2fa-4945-a8be-3b23e2e32a6a.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/175265974-c7462f8e-ebd8-44d7-8ca6-f811014e7087.png)<br>
@@ -210,7 +213,7 @@ Output:<br>
 
 
 
-Develop a program to change the image to different color spaces<br>
+**Develop a program to change the image to different color spaces**<br>
 import cv2 <br>
 img=cv2.imread("D:\\flower1.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -226,15 +229,15 @@ cv2.imshow("YUV image",yuv)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/175268656-a95b8986-4d80-4e17-a954-586270cc0ef0.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/175268891-acb27b76-a9b8-4959-a877-7a0d7d2544d2.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/175269107-99d9cd1d-7d4f-40d4-b632-164c273673e3.png)<br>
-  ![image](https://user-images.githubusercontent.com/97940058/175269323-ef7282cd-2b28-4d3e-8413-658d17a0a3fe.png)<br>
-  ![image](https://user-images.githubusercontent.com/97940058/175269542-10409f54-064b-496f-913d-115fad8d9113.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175269323-ef7282cd-2b28-4d3e-8413-658d17a0a3fe.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/175269542-10409f54-064b-496f-913d-115fad8d9113.png)<br>
   
   
-Develop aprogram to create an image using 2D array<br>
+**Develop aprogram to create an image using 2D array**<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -246,10 +249,10 @@ img.save('image1.png')<br>
 img.show()<br>
 c.waitKey(0)<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/175272710-ca0aa707-9341-46d7-8149-d7e5da5e7317.png)
 
-program to perform bitwise operations<br>
+**program to perform bitwise operations**<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 image1=cv2.imread('bt1.jpg')<br>
@@ -272,11 +275,11 @@ plt.subplot(155)<br>
 plt.imshow(bitwiseNot_img2)<br>
 cv2.waitKey(0)<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/176425094-2994cde7-8ec4-4290-94a6-1143328759ae.png)<br>
 
 
-program to blurring image<br>
+**program to blurring image**<br>
 import cv2<br>
 import numpy as np<br>
 image=cv2.imread('dog.jpg')<br>
@@ -292,7 +295,7 @@ bilateral=cv2.bilateralFilter(image,9,75,75)<br>
 cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178445519-a854bb7e-8412-40a3-88bd-63aba67ef750.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/178445728-0374acda-2bf4-444c-b1c3-2ba3c58da177.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/178445887-e0de7f18-4abe-42e0-8acb-bf1254167f7e.png)<br>
@@ -300,9 +303,7 @@ Output:<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
 
 
-
-
-program to perform image enhancement<br>
+**program to perform image enhancement**<br>
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('dog.jpg')<br>
@@ -324,7 +325,7 @@ sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
 
-Output:<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
 
 
