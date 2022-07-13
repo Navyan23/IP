@@ -296,12 +296,6 @@ cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 **Output:**<br>
-![image](https://user-images.githubusercontent.com/97940058/178445519-a854bb7e-8412-40a3-88bd-63aba67ef750.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178445728-0374acda-2bf4-444c-b1c3-2ba3c58da177.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178445887-e0de7f18-4abe-42e0-8acb-bf1254167f7e.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178446106-7ed25d5d-d485-42f6-9526-0f593b4a4d45.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
-
 
 **program to perform image enhancement**<br>
 from PIL import Image<br>
@@ -324,6 +318,39 @@ enh_sha=ImageEnhance.Sharpness(image)<br>
 sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178445519-a854bb7e-8412-40a3-88bd-63aba67ef750.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178445728-0374acda-2bf4-444c-b1c3-2ba3c58da177.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178445887-e0de7f18-4abe-42e0-8acb-bf1254167f7e.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178446106-7ed25d5d-d485-42f6-9526-0f593b4a4d45.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
+
+
+**program to perform morphological operations**<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image,ImageEnhance<br>
+img=cv2.imread('dog.jpg',0)<br><br>
+ax=plt.subplots(figsize=(20,10))<br>
+kernel=np.ones((5,5),np.uint8)<br>
+opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)<br>
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)<br>
+erosion=cv2.erode(img,kernel,iterations=1)<br>
+dilation=cv2.dilate(img,kernel,iterations=1)<br>
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel)<br>
+plt.subplot(151)<br>
+plt.imshow(opening)<br>
+plt.subplot(152)<br>
+plt.imshow(closing)<br>
+plt.subplot(153)<br>
+plt.imshow(erosion)<br>
+plt.subplot(154)<br>
+plt.imshow(dilation)<br>
+plt.subplot(155)<br>
+plt.imshow(gradient)<br>
+cv2.waitKey(0)<br>
+
 
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
