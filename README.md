@@ -237,7 +237,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940058/175269542-10409f54-064b-496f-913d-115fad8d9113.png)<br>
   
   
-**Develop aprogram to create an image using 2D array**<br>
+**Develop a program to create an image using 2D array**<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -381,7 +381,7 @@ if isSaved:<br>
 ![image](https://user-images.githubusercontent.com/97940058/178708836-99bcb3d1-1830-454b-9bbb-967111b48504.png)<br>
 
 
-**Pgogram to perform slicing with background**<br>
+**Program to perform slicing with background**<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
