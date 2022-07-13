@@ -296,6 +296,12 @@ cv2.imshow('Bilateral Blurring',bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 **Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178706561-5ac5f6a7-f574-43c6-b25a-5152fe537b54.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178706697-e044098b-ff96-4ba9-80be-68919d2e101c.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178706781-6292ee5b-6289-4f35-afa2-eea21a2baa7f.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178706969-307a0887-0103-4255-89c0-30d68e448fc8.png)<br>
+
+
 
 **program to perform image enhancement**<br>
 from PIL import Image<br>
