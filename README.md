@@ -337,7 +337,7 @@ import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
 from PIL import Image,ImageEnhance<br>
-img=cv2.imread('dog.jpg',0)<br><br>
+img=cv2.imread('dog.jpg',0)<br>
 ax=plt.subplots(figsize=(20,10))<br>
 kernel=np.ones((5,5),np.uint8)<br>
 opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)<br>
