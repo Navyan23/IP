@@ -357,9 +357,79 @@ plt.subplot(155)<br>
 plt.imshow(gradient)<br>
 cv2.waitKey(0)<br>
 
-
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
+
+
+**Program to perform (i)  Read the image,convert it into grayscale image**<br>
+                   **(ii) write(save) the grayscale image and**<br>
+                   **(iii)dispaly the original image and grayscale image**<br>
+
+import cv2<br>
+OriginalImg=cv2.imread('f1.jpg')<br>
+GrayImg=cv2.imread('f1.jpg',0)<br>
+isSaved=cv2.imwrite('D:/i.jpg',GrayImg)<br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display Grayscale Image',GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+    print('The image is successfully saved.')<br>
+        
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178708657-b6e1ea9c-09c7-48d0-85c3-af43acc0626a.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178708836-99bcb3d1-1830-454b-9bbb-967111b48504.png)<br>
+
+
+**Pgogram to perform slicing with background**<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('n1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
+
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178709561-d22a09a9-f523-45b5-8a94-faadb435767d.png)<br>
+
+
+
+**Program to perform slicing without background**<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('n1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=0<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing w/o background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
+
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178710061-76dc9488-20f6-4704-a406-9494f26dbe86.png)
+
+
+            
+
+
+
 
 
 
