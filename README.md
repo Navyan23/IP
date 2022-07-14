@@ -215,7 +215,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 
 **Develop a program to change the image to different color spaces**<br>
 import cv2 <br>
-img=cv2.imread("D:\\flower1.jpg")<br>
+img=cv2.imread("D:\\rabbit.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
 lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
@@ -230,12 +230,13 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
 **Output:**<br>
-![image](https://user-images.githubusercontent.com/97940058/175268656-a95b8986-4d80-4e17-a954-586270cc0ef0.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/175268891-acb27b76-a9b8-4959-a877-7a0d7d2544d2.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/175269107-99d9cd1d-7d4f-40d4-b632-164c273673e3.png)<br>
-![image](https://user-images.githubusercontent.com/97940058/175269542-10409f54-064b-496f-913d-115fad8d9113.png)<br>
-  
-  
+![image](https://user-images.githubusercontent.com/97940058/178971202-4532cd3c-1431-4756-bb1d-5406d28083ae.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178971350-0e8833af-5d3a-499a-821f-fff4003dcb0d.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178971419-65af4d97-c409-467e-9989-22dbdfc1674d.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178971484-648da2f1-97d4-446a-8a07-c099b9b81f74.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/178971550-43998073-179f-460c-8159-96aee1d176cc.png)<br>
+
+
 **Develop a program to create an image using 2D array**<br>
 import cv2 as c<br>
 import numpy as np<br>
