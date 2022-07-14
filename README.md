@@ -461,7 +461,7 @@ from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 image = io.imread('dog.jpg')<br>
 
-**_ = plt.hist(image.ravel(), bins = 256, color = 'orange', )<br>
+_ = plt.hist(image.ravel(), bins = 256, color = 'orange', )<br>
 _ = plt.hist(image[:, :, 0].ravel(), bins = 256, color = 'red', alpha = 0.5)<br>
 _ = plt.hist(image[:, :, 1].ravel(), bins = 256, color = 'Green', alpha = 0.5)<br>
 _ = plt.hist(image[:, :, 2].ravel(), bins = 256, color = 'Blue', alpha = 0.5)<br>
