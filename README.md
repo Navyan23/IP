@@ -426,6 +426,91 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178710061-76dc9488-20f6-4704-a406-9494f26dbe86.png)
 
 
+
+**Develop a program to analize the image data using histogram**<br>
+
+**using opencv**<br>
+import cv2<br>
+from matplotlib import pyplot as plt<br>
+img = cv2.imread('dog.jpg',0)<br>
+plt.hist(img.ravel(),256,[0,256])<br>
+plt.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178958471-7b9a75a4-921c-458a-91f9-eb40d4f6ce09.png)<br>
+
+**Using matplotlib**<br>
+# importing required libraries of opencv<br>
+import cv2<br>
+
+# importing library for plotting<br>
+from matplotlib import pyplot as plt<br>
+ 
+# reads an input image<br>
+img = cv2.imread('f1.jpg',0)<br>
+ 
+# find frequency of pixels in range 0-255<br>
+histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
+ 
+# show the plotting graph of an image<br>
+plt.plot(histr)<br>
+plt.show()<br>
+
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178958920-fd6f8a51-8a43-4fda-b8ab-cf95507e5962.png)<br>
+
+**Using skimage**<br>
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+image = io.imread('dog.jpg')<br>
+
+_ = plt.hist(image.ravel(), bins = 256, color = 'orange', )<br>
+_ = plt.hist(image[:, :, 0].ravel(), bins = 256, color = 'red', alpha = 0.5)<br>
+_ = plt.hist(image[:, :, 1].ravel(), bins = 256, color = 'Green', alpha = 0.5)<br>
+_ = plt.hist(image[:, :, 2].ravel(), bins = 256, color = 'Blue', alpha = 0.5)<br>
+_ = plt.xlabel('Intensity Value')<br>
+_ = plt.ylabel('Count')<br>
+_ = plt.legend(['Total', 'Red_Channel', 'Green_Channel', 'Blue_Channel'])<br>
+plt.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178959675-1d2d142c-1c48-4bbd-a255-6a30dff507e5.png)<br>
+
+**Using numpy**<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('dog.jpg')<br>
+hist=cv2.calcHist([img],[0],None,[256],[0,256])<br>
+plt.hist(img.ravel(),256,[0,256])<br>
+plt.show()<br>
+**output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178960477-2e3f5d15-af76-48ae-95b5-931be5e26adc.png)<br>
+
+
+**using numpy**<br>
+import numpy as np<br>
+import cv2 as cv<br>
+from matplotlib import pyplot as plt<br>
+img = cv.imread('dog.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img = cv.imread('dog.jpg',0)<br>
+plt.hist(img.ravel(),256,[0,256]);<br>
+plt.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/178960848-1c9e871d-1f7e-4bef-bcb1-6daefd2a088b.png)<br>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
             
 
 
