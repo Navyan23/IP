@@ -500,7 +500,99 @@ plt.show()<br>
 **program to perform basic image data analysis using intesity transformation:<br>
 a)image negative<br>
 b)log transformation<br>
-c)gamma correction**<br.
+c)gamma correction**<br>
+%matplotlib inline<br>
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+import warnings<br>
+import matplotlib.cbook<br>
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)<br>
+pic=imageio.imread('btf.jpg')<br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(pic)<br>
+plt.axis('off')<br>
+
+**Output**<br>
+![image](https://user-images.githubusercontent.com/97940058/179957589-e3a94f5f-5b16-4d94-8de8-8badedb8cf48.png)<br>
+
+negative=255- pic # neg = (L-1) - img<br>
+plt.figure(figsize= (6,6))<br>
+plt.imshow(negative);<br>
+plt.axis('off');<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/179957946-cfc458e2-7f65-4aee-820a-bc9292adab7c.png)<br>
+
+%matplotlib inline<br>
+import imageio<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+pic=imageio.imread('btf.jpg')<br>
+gray=lambda rgb : np.dot(rgb[...,:3],[0.299,0.587,0.114])<br>
+gray=gray(pic)<br>
+max_=np.max(gray)<br>
+def log_transform():<br>
+    return(255/np.log(1+max_))*np.log(1+gray)<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(log_transform(),cmap=plt.get_cmap(name='gray'))<br>
+plt.axis('off');<br>
+**Output:**
+![image](https://user-images.githubusercontent.com/97940058/179958256-d16c4d31-b5b4-48d6-bf51-3b70a96a3afb.png)<br>
+
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+#Gamma encoding<br>
+pic=imageio.imread('btf.jpg')<br>
+gamma=2.2# Gamma < 1 ~ Dark ; Gamma > 1 ~ Bright<br>
+gamma_correction=((pic/255)**(1/gamma))<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(gamma_correction)<br>
+plt.axis('off')<br>
+**Output:**
+![image](https://user-images.githubusercontent.com/97940058/179958458-5be03405-4967-45a9-82c7-001f5f74279a.png)<br>
+
+**program to perform basic imafe manipulations:<br>
+a)Sharpness<br>
+b)Flipping<br>
+c)cropping**<br>
+#Image sharpen<br>
+from PIL import Image<br>
+from PIL import ImageFilter<br>
+import matplotlib.pyplot as plt<br>
+#Load the image<br>
+my_image = Image.open('lion.jpg')<br>
+#use shrpaen function<br>
+sharp = my_image.filter(ImageFilter.SHARPEN)<br>
+#save the image<br>
+sharp.save('D:/image_sharpen.jpg')<br>
+sharp.show()<br>
+plt.imshow(sharp)<br>
+plt.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/179959511-b9a2a7f4-91cf-463d-b615-00cfb01509bc.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/179959603-37ee580e-e954-4757-a1d3-362c4ae76cdf.png)<br>
+
+#Image flip<br>
+import matplotlib.pyplot as plt<br>
+#Load the image<br>
+img= Image.open('lion.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+#use the flip function<br>
+flip = img.transpose(Image.FLIP_LEFT_RIGHT)<br>
+#save the image<br>
+flip.save('D:/image_flip.jpg')<br>
+plt.imshow(flip)<br>
+plt.show()<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/179960397-0faff5a7-3f68-45cd-823e-82820c08d31d.png)<br>
+
+
+
+
+
+
+
+
 
 
 
