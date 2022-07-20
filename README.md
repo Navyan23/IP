@@ -497,6 +497,12 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178960848-1c9e871d-1f7e-4bef-bcb1-6daefd2a088b.png)<br>
 **************************************************************************************************************************
 
+**program to perform basic image data analysis using intesity transformation:<br>
+a)image negative<br>
+b)log transformation<br>
+c)gamma correction**<br.
+
+
 
 
 
