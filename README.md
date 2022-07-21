@@ -595,7 +595,7 @@ im=Image.open('lion.jpg')<br>
 #(This is not mandatory)<br>
 width, height = im.size<br>
 #Cropped image of above dimension<br>
-# (It will not change original image)<br>
+#(It will not change original image)<br>
 im1=im.crop((280,100,800,600))<br>
 #shows the image in image viewer<br>
 im1.show()<br>
