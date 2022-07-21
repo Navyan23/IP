@@ -706,6 +706,7 @@ plt.show() <br>
 **Write a program to  (circle)**<br>
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
+
 arr = np.zeros((256,256,3), dtype=np.uint8)<br>
 imgsize = arr.shape[:2]<br>
 innerColor = (255, 255, 255)<br>
@@ -714,14 +715,17 @@ for y in range(imgsize[1]):<br>
     for x in range(imgsize[0]):<br>
         #Find the distance to the center<br>
         distanceToCenter = np.sqrt((x - imgsize[0]//2) ** 2 + (y - imgsize[1]//2) ** 2)<br>
+
         #Make it on a scale from 0 to 1innerColor<br>
         distanceToCenter = distanceToCenter / (np.sqrt(2) * imgsize[0]/2)<br>
-        #Calculate r, g, and b values
+
+        #Calculate r, g, and b values<br>
         r = outerColor[0] * distanceToCenter + innerColor[0] * (1 - distanceToCenter)<br>
         g = outerColor[1] * distanceToCenter + innerColor[1] * (1 - distanceToCenter)<br>
         b = outerColor[2] * distanceToCenter + innerColor[2] * (1 - distanceToCenter)<br>
-        #print r, g, b<br>
+        # print r, g, b<br>
         arr[y, x] = (int(r), int(g), int(b))<br>
+
 plt.imshow(arr, cmap='gray')<br>
 plt.show()<br>
 
