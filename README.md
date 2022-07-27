@@ -780,7 +780,7 @@ data[120:256, 0:512] = [218, 218, 218]<br>
 data[256:320, 0:512] = [0, 0,0]<br>
 data[320:420, 0:512] = [218, 218,218]<br>
 data[420:512, 0:512] = [255, 255,255]<br>
-# red patch in upper left<br>
+#red patch in upper left<br>
 img = Image.fromarray(data, 'RGB')<br>
 img.save('img8.jpg')<br>
 img.show()<br>
