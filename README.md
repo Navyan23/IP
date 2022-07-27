@@ -768,6 +768,84 @@ plt.show()  <br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/180192229-8c728d66-39c3-435a-af2b-f4be628970bb.png)<br>
 
+
+**program **<br>
+from PIL import Image<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+w, h = 512, 512<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:120, 0:512] = [255, 255, 255]<br>
+data[120:256, 0:512] = [218, 218, 218]<br>
+data[256:320, 0:512] = [0, 0,0]<br>
+data[320:420, 0:512] = [218, 218,218]<br>
+data[420:512, 0:512] = [255, 255,255]<br>
+# red patch in upper left<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('img8.jpg')<br>
+img.show()<br>
+plt.imshow(img)<br>
+
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/181223252-d6651dad-1ba4-41fe-ab05-bdfba75839f1.png)<br>
+
+
+**Program to find max pixel value from the image**<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('F3.jpg' )<br>
+plt.imshow(img)<br>
+plt.show()<br>
+max_channels = np.amax([np.amax(img[:,:,0]), np.amax(img[:,:,1]),np.amax(img[:,:,2])])<br>
+print(max_channels)<br>
+
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/181223732-e8f2da86-b25b-4de0-866f-20bbe6969790.png)<br><br>
+
+
+**Program to find minimum pixel value from the image**<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('F3.jpg' )<br>
+plt.imshow(img)<br>
+plt.show()<br>
+min_channels = np.amin([np.min(img[:,:,0]), np.amin(img[:,:,1]),np.amin(img[:,:,2])])<br>
+print(min_channels)<br>
+**Output:**
+![image](https://user-images.githubusercontent.com/97940058/181224150-97f3c306-36ef-40d6-ad4b-1fb1b9b0eb46.png)<br>
+
+
+**program to find average pixel value from the image**<br>
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread("F3.JPG",0)<br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
+plt.imshow(img)<br>
+np.average(img)<br>
+**Output:**<br>
+![image](https://user-images.githubusercontent.com/97940058/181224504-9f4ad5e5-9fd8-43e2-ae98-d36de7ccffdb.png)<br>
+
+
+**Program to find standard deviation **<br>
+from PIL import Image,ImageStat<br>
+import matplotlib.pyplot as plt<br>
+im=Image.open('F3.jpg')<br>
+plt.imshow(im)<br>
+plt.show()<br>
+stat=ImageStat.Stat(im)<br>
+print(stat.stddev)<br>
+**Output**<br>
+![image](https://user-images.githubusercontent.com/97940058/181225066-bd3edfa0-e45b-4b3d-b329-94f32842fe81.png)<br>
+
+
+
+
+
+
+
+
             
 
 
