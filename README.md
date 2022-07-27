@@ -828,7 +828,7 @@ np.average(img)<br>
 ![image](https://user-images.githubusercontent.com/97940058/181224504-9f4ad5e5-9fd8-43e2-ae98-d36de7ccffdb.png)<br>
 
 
-**Program to find standard deviation **<br>
+**Program to find standard deviation**<br>
 from PIL import Image,ImageStat<br>
 import matplotlib.pyplot as plt<br>
 im=Image.open('F3.jpg')<br>
