@@ -545,7 +545,7 @@ plt.axis('off')<br>
 **Output:**
 ![image](https://user-images.githubusercontent.com/97940058/179958458-5be03405-4967-45a9-82c7-001f5f74279a.png)<br>
 
-# **28.program to perform basic imafe manipulations: a)Sharpness b)Flipping c)cropping**<br>
+# **28.program to perform basic imafe manipulations: a)Sharpness b)Flipping c)Cropping**<br>
 #Image sharpen<br>
 from PIL import Image<br>
 from PIL import ImageFilter<br>
@@ -560,7 +560,6 @@ sharp.show()<br>
 plt.imshow(sharp)<br>
 plt.show()<br>
 **Output:**<br>
-![image](https://user-images.githubusercontent.com/97940058/179959511-b9a2a7f4-91cf-463d-b615-00cfb01509bc.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/179959603-37ee580e-e954-4757-a1d3-362c4ae76cdf.png)<br>
 
 #Image flip<br>
@@ -738,7 +737,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/180191649-c5257e4d-fccc-4b25-9103-1ff10b18badc.png)<br>
 
 
-# **32.Program to    **<br>
+# **32.Program to**<br>
 
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
