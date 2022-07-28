@@ -360,9 +360,7 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
 
 
-# **19.Program to perform (i)  Read the image,convert it into grayscale image**<br>
-  **(ii) write(save) the grayscale image and**<br>
-  **(iii)dispaly the original image and grayscale image**<br>
+# **19.Program to perform (i)  Read the image,convert it into grayscale image (ii) write(save) the grayscale image and (iii)dispaly the original image and grayscale image**<br>
 
 import cv2<br>
 OriginalImg=cv2.imread('f1.jpg')<br>
@@ -497,10 +495,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178960848-1c9e871d-1f7e-4bef-bcb1-6daefd2a088b.png)<br>
 **************************************************************************************************************************
 
-# **27.program to perform basic image data analysis using intesity transformation:**<br>
-**a)image negative**<br>
-**b)log transformation**<br>
-**c)gamma correction**<br>
+# **27.program to perform basic image data analysis using intesity transformation: a)image negative b)log transformation c)gamma correction**<br>
 %matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
@@ -550,10 +545,7 @@ plt.axis('off')<br>
 **Output:**
 ![image](https://user-images.githubusercontent.com/97940058/179958458-5be03405-4967-45a9-82c7-001f5f74279a.png)<br>
 
-# **28.program to perform basic imafe manipulations:**<br>
-**a)Sharpness**<br>
-**b)Flipping**<br>
-**c)cropping**<br>
+# **28.program to perform basic imafe manipulations: a)Sharpness b)Flipping c)cropping**<br>
 #Image sharpen<br>
 from PIL import Image<br>
 from PIL import ImageFilter<br>
