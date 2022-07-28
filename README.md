@@ -832,14 +832,14 @@ print(stat.stddev)<br>
 
 # **38.Python3 program for printing the rectangular pattern**<br>
  
-# Function to print the pattern<br>
+#Function to print the pattern<br>
 def printPattern(n):<br>
  
     arraySize = n * 2 - 1;<br>
     result = [[0 for x in range(arraySize)]<br>
                  for y in range(arraySize)];<br>
          
-    # Fill the values<br>
+    #Fill the values<br>
     for i in range(arraySize):<br>
         for j in range(arraySize):<br>
             if(abs(i - (arraySize // 2)) ><br>
