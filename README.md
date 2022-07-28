@@ -72,7 +72,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/173816334-0feca8d5-21b1-40cd-96ab-8df53f69b402.png)<br>
 
 
-**7.Write a program to display the image attributes**<br>
+# **7.Write a program to display the image attributes**<br>
 image=Image.open('img.jpg')<br>
 print("Filename:",image.filename)<br>
 print("Format:",image.format)<br>
@@ -85,7 +85,7 @@ image.close()<br>
 ![image](https://user-images.githubusercontent.com/97940058/173817125-c09ae608-7dfb-44de-b7c8-0871bed4dfb4.png)<br>
 
 
-**8.Develop a program to conver the original image to gray scale and then to binary**<br>
+# **8.Develop a program to conver the original image to gray scale and then to binary**<br>
 import cv2<br>
 #read the image file<br>
 img=cv2.imread('flower4.jpg')<br>
@@ -106,7 +106,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054021-d5c718d0-f813-4472-9e71-9f06defce688.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174054281-cc6fb558-c42b-4424-b5e5-d54cbdcdd461.png)<br>
 
-**9.Resize the original image**<br>
+# **9.Resize the original image**<br>
 import cv2<br>
 img=cv2.imread('dog.jpg')<br>
 print('original image length width',img.shape)<br>
@@ -123,7 +123,7 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940058/174055030-d31691c0-2d5a-47f4-ad35-0a61a9f54641.png)<br>
 
 
-**Develop a program to read an image using URL**<br>
+# **10.Develop a program to read an image using URL**<br>
 from skimage import io
 import matplotlib.pyplot as plt<br>
 url='https://images.unsplash.com/photo-1600703136783-bdb5ea365239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
@@ -135,7 +135,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/175257948-78fe3194-63c7-46d2-8abe-56021d6bdd55.png)<br>
 
 
-**Develop a program to mask and blur the image**<br>
+# **11.Develop a program to mask and blur the image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -182,7 +182,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/175264941-cadefad9-5027-4c46-974d-974f57b6544b.png)<br>
 
 
-**Develop a program to perform arithmatic operations on image**<br>
+# **12.Develop a program to perform arithmatic operations on image**<br>
 import cv2<br>
 import matplotlib.image as mpimg<br>
 import matplotlib.pyplot as plt<br>
@@ -212,7 +212,7 @@ cv2.imwrite('output.jpg',fimg4)<br>
 
 
 
-**Develop a program to change the image to different color spaces**<br>
+# **13.Develop a program to change the image to different color spaces**<br>
 import cv2 <br>
 img=cv2.imread("D:\\rabbit.jpg")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -236,7 +236,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178971550-43998073-179f-460c-8159-96aee1d176cc.png)<br>
 
 
-**Develop a program to create an image using 2D array**<br>
+# **14.Develop a program to create an image using 2D array**<br>
 import cv2 as c<br>
 import numpy as np<br>
 from PIL import Image<br>
@@ -251,7 +251,7 @@ c.waitKey(0)<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/175272710-ca0aa707-9341-46d7-8149-d7e5da5e7317.png)
 
-**program to perform bitwise operations**<br>
+# **15.program to perform bitwise operations**<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 image1=cv2.imread('bt1.jpg')<br>
@@ -278,7 +278,7 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940058/176425094-2994cde7-8ec4-4290-94a6-1143328759ae.png)<br>
 
 
-**program to blurring image**<br>
+# **16.program to blurring image**<br>
 import cv2<br>
 import numpy as np<br>
 image=cv2.imread('dog.jpg')<br>
@@ -302,7 +302,7 @@ cv2.destroyAllWindows()<br>
 
 
 
-**program to perform image enhancement**<br>
+# **17.program to perform image enhancement**<br>
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('dog.jpg')<br>
@@ -331,7 +331,7 @@ image_sharped.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446453-4c487004-1861-4d1a-99c4-54569c7fd6e6.png)<br>
 
 
-**program to perform morphological operations**<br>
+# **18.program to perform morphological operations**<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -360,7 +360,7 @@ cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940058/178446928-de4ebaff-b721-443c-85ed-075ba963f80c.png)<br>
 
 
-**Program to perform (i)  Read the image,convert it into grayscale image**<br>
+# **19.Program to perform (i)  Read the image,convert it into grayscale image**<br>
                    **(ii) write(save) the grayscale image and**<br>
                    **(iii)dispaly the original image and grayscale image**<br>
 
@@ -380,7 +380,7 @@ if isSaved:<br>
 ![image](https://user-images.githubusercontent.com/97940058/178708836-99bcb3d1-1830-454b-9bbb-967111b48504.png)<br>
 
 
-**Program to perform slicing with background**<br>
+# **20.Program to perform slicing with background**<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -403,7 +403,7 @@ plt.show()<br>
 
 
 
-**Program to perform slicing without background**<br>
+# **21.Program to perform slicing without background**<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -426,7 +426,7 @@ plt.show()<br>
 
 
 
-**Develop a program to analize the image data using histogram with opencv**<br>
+# **22.Develop a program to analize the image data using histogram with opencv**<br>
 
 import cv2<br>
 from matplotlib import pyplot as plt<br>
@@ -435,8 +435,8 @@ plt.hist(img.ravel(),256,[0,256])<br>
 plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178958471-7b9a75a4-921c-458a-91f9-eb40d4f6ce09.png)<br>
-
-**Develop a program to analize the image data using histogram with matplotlib**<br>
+# 
+**23.Develop a program to analize the image data using histogram with matplotlib**<br>
 #importing required libraries of opencv<br>
 import cv2<br>
 
@@ -456,7 +456,7 @@ plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178958920-fd6f8a51-8a43-4fda-b8ab-cf95507e5962.png)<br>
 
-**Develop a program to analize the image data using histogram with  skimage**<br>
+#**24.Develop a program to analize the image data using histogram with  skimage**<br>
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 image = io.imread('dog.jpg')<br>
@@ -472,7 +472,7 @@ plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178959675-1d2d142c-1c48-4bbd-a255-6a30dff507e5.png)<br>
 
-**Develop a program to analize the image data using histogram with  numpy(1)**<br>
+# **25.Develop a program to analize the image data using histogram with  numpy(1)**<br>
 import cv2<br>
 import numpy as np<br>
 img=cv2.imread('dog.jpg')<br>
@@ -483,7 +483,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178960477-2e3f5d15-af76-48ae-95b5-931be5e26adc.png)<br>
 
 
-**Develop a program to analize the image data using histogram with numpy(2)**<br>
+# **26.Develop a program to analize the image data using histogram with numpy(2)**<br>
 import numpy as np<br>
 import cv2 as cv<br>
 from matplotlib import pyplot as plt<br>
@@ -497,7 +497,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/178960848-1c9e871d-1f7e-4bef-bcb1-6daefd2a088b.png)<br>
 **************************************************************************************************************************
 
-**program to perform basic image data analysis using intesity transformation:<br>
+# **27.program to perform basic image data analysis using intesity transformation:<br>
 a)image negative<br>
 b)log transformation<br>
 c)gamma correction**<br>
@@ -550,7 +550,7 @@ plt.axis('off')<br>
 **Output:**
 ![image](https://user-images.githubusercontent.com/97940058/179958458-5be03405-4967-45a9-82c7-001f5f74279a.png)<br>
 
-**program to perform basic imafe manipulations:<br>
+# **28.program to perform basic imafe manipulations:<br>
 a)Sharpness<br>
 b)Flipping<br>
 c)cropping**<br>
@@ -604,7 +604,7 @@ plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/179961102-410908b3-5cf6-4b69-8e27-12502bfe132a.png)<br>
 
-**Program to conver image to matrix**<br>
+# **29.Program to conver image to matrix**<br>
 from PIL import Image<br>
 from numpy import asarray<br>
 img = Image.open('btf.jpg')<br>
@@ -746,7 +746,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/180191649-c5257e4d-fccc-4b25-9103-1ff10b18badc.png)<br>
 
 
-**Program to    **<br>
+# **30.Program to    **<br>
 
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
