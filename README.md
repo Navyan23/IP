@@ -435,8 +435,8 @@ plt.hist(img.ravel(),256,[0,256])<br>
 plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178958471-7b9a75a4-921c-458a-91f9-eb40d4f6ce09.png)<br>
-# 
-**23.Develop a program to analize the image data using histogram with matplotlib**<br>
+ 
+# **23.Develop a program to analize the image data using histogram with matplotlib**<br>
 #importing required libraries of opencv<br>
 import cv2<br>
 
@@ -456,7 +456,7 @@ plt.show()<br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/178958920-fd6f8a51-8a43-4fda-b8ab-cf95507e5962.png)<br>
 
-#**24.Develop a program to analize the image data using histogram with  skimage**<br>
+# **24.Develop a program to analize the image data using histogram with  skimage** <br>
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 image = io.imread('dog.jpg')<br>
@@ -661,7 +661,7 @@ print(numpydata)<br>
   [ 11  13  28]<br>
   [ 11  13  28]]]<br>
   
-  **Program (box)**<br>
+  **30.Program (box)**<br>
   from PIL import Image<br>
 import matplotlib.pyplot as plt<br>
   
@@ -716,7 +716,7 @@ plt.show()  <br>
 **Output:**<br>
 ![image](https://user-images.githubusercontent.com/97940058/180191124-f49217ea-724a-486d-beaf-4f9e6ba6685c.png)<br>
 
-**Write a program to  (circle)**<br>
+**31.Write a program to  (circle)**<br>
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
 
@@ -746,7 +746,7 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940058/180191649-c5257e4d-fccc-4b25-9103-1ff10b18badc.png)<br>
 
 
-# **30.Program to    **<br>
+# **32.Program to    **<br>
 
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
@@ -769,7 +769,7 @@ plt.show()  <br>
 ![image](https://user-images.githubusercontent.com/97940058/180192229-8c728d66-39c3-435a-af2b-f4be628970bb.png)<br>
 
 
-**program **<br>
+**33.program**<br>
 from PIL import Image<br>
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
@@ -790,7 +790,7 @@ plt.imshow(img)<br>
 ![image](https://user-images.githubusercontent.com/97940058/181223252-d6651dad-1ba4-41fe-ab05-bdfba75839f1.png)<br>
 
 
-**Program to find max pixel value from the image**<br>
+# **34.Program to find max pixel value from the image**<br>
 import cv2<br>
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
@@ -804,7 +804,7 @@ print(max_channels)<br>
 ![image](https://user-images.githubusercontent.com/97940058/181223732-e8f2da86-b25b-4de0-866f-20bbe6969790.png)<br><br>
 
 
-**Program to find minimum pixel value from the image**<br>
+# **35.Program to find minimum pixel value from the image**<br>
 import cv2<br>
 import numpy as np<br>
 import matplotlib.pyplot as plt<br>
@@ -817,7 +817,7 @@ print(min_channels)<br>
 ![image](https://user-images.githubusercontent.com/97940058/181224150-97f3c306-36ef-40d6-ad4b-1fb1b9b0eb46.png)<br>
 
 
-**program to find average pixel value from the image**<br>
+# **36.program to find average pixel value from the image**<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 img=cv2.imread("F3.JPG",0)<br>
@@ -828,7 +828,7 @@ np.average(img)<br>
 ![image](https://user-images.githubusercontent.com/97940058/181224504-9f4ad5e5-9fd8-43e2-ae98-d36de7ccffdb.png)<br>
 
 
-**Program to find standard deviation**<br>
+# **37.Program to find standard deviation**<br>
 from PIL import Image,ImageStat<br>
 import matplotlib.pyplot as plt<br>
 im=Image.open('F3.jpg')<br>
@@ -838,6 +838,8 @@ stat=ImageStat.Stat(im)<br>
 print(stat.stddev)<br>
 **Output**<br>
 ![image](https://user-images.githubusercontent.com/97940058/181225066-bd3edfa0-e45b-4b3d-b329-94f32842fe81.png)<br>
+
+
 
 
 
