@@ -864,9 +864,9 @@ printPattern(n);<br>
 
 # **Edge detection**<br>
 import cv2<br>
-# Read the original image<br>
+#Read the original image<br>
 img = cv2.imread('lion.jpg')<br>
-# Display original image<br>
+#Display original image<br>
 cv2.imshow('Original', img)<br>
 cv2.waitKey(0)<br>
 #Convert to graycsale<br>
@@ -885,7 +885,7 @@ cv2.imshow('Sobel Y', sobely)<br>
 cv2.waitKey(0)<br>
 cv2.imshow('Sobel X Y using Sobel() function', sobelxy)<br>
 cv2.waitKey(0)<br>
-# Canny Edge Detection<br>
+#Canny Edge Detection<br>
 edges = cv2.Canny(image=img_blur, threshold1=100, threshold2=200) # Canny Edge Detection<br>
 #Display Canny Edge Detection Image<br>
 cv2.imshow('Canny Edge Detection', edges)<br>
