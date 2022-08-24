@@ -875,9 +875,9 @@ img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)<br>
 img_blur = cv2.GaussianBlur(img_gray, (3,3), 0)<br>
 <br>
 #Sobel Edge Detection<br>
-sobelx = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=0, ksize=5) # Sobel Edge Detection on the X axis<br>
-sobely = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=0, dy=1, ksize=5) # Sobel Edge Detection on the Y axis<br>
-sobelxy = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=1, ksize=5) # Combined X and Y Sobel Edge Detection<br>
+sobelx = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=0, ksize=5) #Sobel Edge Detection on the X axis<br>
+sobely = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=0, dy=1, ksize=5) #Sobel Edge Detection on the Y axis<br>
+sobelxy = cv2.Sobel(src=img_blur, ddepth=cv2.CV_64F, dx=1, dy=1, ksize=5) #Combined X and Y Sobel Edge Detection<br>
 #Display Sobel Edge Detection Images<br>
 cv2.imshow('Sobel X', sobelx)<br>
 cv2.waitKey(0)<br>
@@ -893,6 +893,16 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 **Result**<br>
 ![image](https://user-images.githubusercontent.com/97940058/186392552-999a7b27-8091-41eb-8117-6679d55049a5.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/186393554-d78cbd77-b17d-43eb-901f-efeefd8d0f86.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/186393709-7725906a-582d-4467-9d34-74a5306578f3.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/186394092-68388921-f626-497b-b3d9-a0c5a9572375.png)<br>
+![image](https://user-images.githubusercontent.com/97940058/186394292-bbd147f2-e487-4e6c-ae20-f42d7e972a40.png)<br>
+
+
+
+
+
+
 
 
 
