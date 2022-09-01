@@ -862,7 +862,7 @@ printPattern(n);<br>
 ![image](https://user-images.githubusercontent.com/97940058/181439288-23c6652b-74ab-4371-ace2-fb420765e770.png)<br>
 
 
-# **Edge detection**<br>
+# **39.Edge detection**<br>
 import cv2<br>
 #Read the original image<br>
 img = cv2.imread('lion.jpg')<br>
@@ -898,7 +898,7 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/97940058/186394092-68388921-f626-497b-b3d9-a0c5a9572375.png)<br>
 ![image](https://user-images.githubusercontent.com/97940058/186394292-bbd147f2-e487-4e6c-ae20-f42d7e972a40.png)<br>
 
-# **Basic pillow operations**<br>
+# **40.Basic pillow operations**<br>
 from PIL import Image,ImageChops,ImageFilter<br>
 from matplotlib import pyplot as plt<br>
 #create a PIL Image objects<br>
@@ -975,7 +975,7 @@ filled_edge<br>
 # **save in the directory**<br>
 edge.save('processed.png')<br>
 
-# **(1) Image restoration:**<br>
+# **41.(1) Image restoration:**<br>
 **a) Restore a damaged image**<br>
 import numpy as np<br>
 import cv2<br>
