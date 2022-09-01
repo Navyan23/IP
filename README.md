@@ -1173,12 +1173,12 @@ extremely sensitive to noise) based edge detector.**<br>
 import cv2
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
-# Loading image<br><br>
+#Loading image<br><br>
 #imge = cv2.imread('SanFrancisco.jpg',) <br>
 imge = cv2.imread('imgsh.png',)<br>
 #converting to gray scale<br>
 gray = cv2.cvtColor(imge, cv2.COLOR_BGR2GRAY)<br>
-# remove noise<br>
+#remove noise<br>
 img = cv2.GaussianBlur (gray,(3,3),0)<br>
 #convolute with proper kernels<br>
 laplacian = cv2.Laplacian (img,cv2.CV_64F)<br>
